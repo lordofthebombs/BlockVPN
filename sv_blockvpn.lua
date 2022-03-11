@@ -1,22 +1,22 @@
 -- Config variables for GetIPIntel
-local owner_email = "dev@predatornetwork.com"
+local owner_email = ""
 local kick_threshhold = 0.99                                                    -- 0.99 is the recommended threshold according to the documentation
 local flags = "b"                                                               -- The flag used by GetIPIntel to determing the strictness of the API. More info in https://getipintel.net/free-proxy-vpn-tor-detection-api/#optional_settings
 
 -- Config variables for IPHub
-local iphub_key = "MTE1NTI6U0dRRHZNS1JveHhNTHVSb094RVZYd3A0T3IzRUFVTmc="        -- Key from my own account, probably will be moved to predator's dev account when live
+local iphub_key = ""        -- Key from my own account, probably will be moved to predator's dev account when live
 local block_code = 1                                                            -- 1 is recommended for most VPN's and proxies
 local iphub_request_headers = { ["X-Key"] = iphub_key }
 
 -- Config variables for IPQualityScore
-local ipscore_key = "6oduldc8F4Wvdqy4iFhb5gvjiBmjfmpw"                          -- This key is currently from my own account, probably will be moved to predator's dev account when live
+local ipscore_key = ""                          -- This key is currently from my own account, probably will be moved to predator's dev account when live
 local ipscore_threshhold = 85                                                   -- The value that determines how likely an IP is used for fraud
 local strictness_level = "1"                                                    -- How strict the checks are in IPQualityScore. Levels are 0, 1, 2, and 3
 
 -- Global variables
-local kick_reason = "\n🛑 We've detected that you are potentially using a proxy or VPN. Please disable the proxy or VPN to play on the server.\n\nBelieve this is an error? Join our Discord @ discord.gg/DkmWSpG and create a ticket. Please submit a screenshot of this current message within the ticket to speed up the process.\n\nCurrent IP: "
+local kick_reason = "\n🛑 We've detected that you are potentially using a proxy or VPN. Please disable the proxy or VPN to play on the server.\n\nCurrent IP: "
 local days = 30
-local days_to_seconds = 86400                                           -- Converts days into seconds
+local days_to_seconds = 86400                                                   -- Converts days into seconds
 local cooldown = days_to_seconds * days                                         -- Days in seconds for how long an entry is valid for
 local ip_regex = "(% *%d+% *%.% *%d+% *%.% *%d+% *%.% *%d+% *)"
 
