@@ -23,8 +23,6 @@ local ip_regex = "(% *%d+% *%.% *%d+% *%.% *%d+% *%.% *%d+% *)"
 -- Whitelisted IPs
 local bypass_vpn_check = {
     [ "127.0.0.1" ] = true,
-    [ "72.11.12.219" ] = true,
-    [ "65.254.155.74" ] = true,
 }
 
 local temp_bypass = {}
