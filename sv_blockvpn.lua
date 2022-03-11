@@ -4,7 +4,7 @@ local kick_threshhold = 0.99                                                    
 local flags = "b"                                                               -- The flag used by GetIPIntel to determing the strictness of the API. More info in https://getipintel.net/free-proxy-vpn-tor-detection-api/#optional_settings
 
 -- Config variables for IPHub
-local iphub_key = ""        -- Key from my own account, probably will be moved to predator's dev account when live
+local iphub_key = ""
 local block_code = 1                                                            -- 1 is recommended for most VPN's and proxies
 local iphub_request_headers = { ["X-Key"] = iphub_key }
 
